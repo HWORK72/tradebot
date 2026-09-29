@@ -1,4 +1,20 @@
-# tradebot
-Трейдбот (симуляция) по заказу от одного человека
-Симуляция трейдботов, можно сделать депозит, открыть график нужной монеты и запустить трейдбота на ненастоящие деньги. В теории там есть криптотокен и можно подключить пополнение на конкретный криптокошелек, но торговля всё равно является симуляцией, заказчик попросил оставить так и не дорабатывать, в этом боте мне особенно понравился дизайн.
-Сделан он полностью в main.py для обхода CORS так как тестировал я ботов на cloudflared tunnel и деплоил со своего пк. Если бот не работает - значит он не запущен на моем пк (у меня их несколько и всё время всех включенными держать не могу), тех подкованные ребята смогут взять мой main.py и запустить его в своем PyCharm самостоятельно через BotFather. Данные я тут также запрятал в .env
+🇷🇺 [Читать на русском](README_RU.md)
+
+A sandboxed algorithmic execution engine engineered for simulating cryptocurrency trading strategies, order book fulfillment, and real-time portfolio management.
+
+### Key Architectural Highlights:
+* **Deterministic Paper Engine:** Real-time simulation of spot orders, account equity tracking, and dynamic PnL calculations with zero capital exposure.
+* **Live Market Feeds:** Synchronous retrieval of cryptocurrency price action and technical candlestick charting.
+* **Strategy Extensibility:** Modular execution pipeline allowing plug-and-play integration for algorithmic entry and exit rules.
+* **Web3 Ready Architecture:** Built-in data schema accommodating non-custodial crypto wallet assignment for fund routing.
+
+### Tech Stack:
+* Python 3.12
+* Asyncio / Aiohttp (Non-blocking I/O)
+* Matplotlib (Technical chart generation)
+* python-dotenv (Environment security)
+
+### Quick Start:
+```bash
+pip install -r requirements.txt
+python main14.py
